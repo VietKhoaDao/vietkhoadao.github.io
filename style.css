@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Be Vietnam Pro",  sans-serif;
+}
+
+body{
+    background-color: #111319;
+    color: #fff;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+nav,
+.main{
+    padding: 0 83px;
+}
+
+nav{
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1A1C22;
+}
+
+nav .left a.logo{
+    font-size: 24px;
+    font-weight: 900;
+    color: #2ada73;
+}
+
+nav .right .links a{
+    font-weight: 500;
+    font-size: 15px;
+}
+
+nav .right .links a:not(:last-child){
+    margin-right: 20px;
+}
+
+.main .movie{
+    overflow: hidden;
+    border-radius: 7px;
+    aspect-ratio: 16/9;
+    background-color: #1A1C22;
+    margin-top: 23px;
+    margin-bottom: 23px;
+}
+
+.main .playlists .title{
+    display: flex;
+    align-items: center;
+    margin-bottom: 23px;
+    cursor: pointer;
+}
+
+.main .playlists .title h2{
+    font-size: 23px;
+    transition: all 0.3s ease;
+}
+
+.main .playlists .title i{
+    font-size: 23px;
+    transition: all 0.3s ease;
+}
+
+.main .playlists .title:hover h2{
+    color: #00DC5A;
+}
+
+.main .playlists .title:hover i{
+    color: #00DC5A;
+}
+
+.main .list-ep{
+    background-color: #1A1C22;
+    padding: 25px;
+}
+
+.main .list-ep p{
+    font-size: 14px;
+    margin-bottom: 23px;
+}
+
+.main .list-ep .list{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.main .list-ep .list a{
+    width: 40px;
+    height: 40px;
+    background-color: #23252B;
+    margin: 0 12px 12px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+}
+
+.main .list-ep .list a.active{
+    color: #00DC5A;
+}
+
+.main .list-ep .list a:hover{
+    color: #00DC5A;
+}
+
+footer{
+    background-color: #0A0C0F;
+    padding: 50px;
+    margin-top: 45px;
+    border-top: 1px solid #2D2F34;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer p{
+    font-size: 15px;
+}
+
+footer p:not(:last-child){
+    margin-bottom: 7px;
+}
+
+@media screen and (max-width: 1172px){
+    nav,
+    .main{
+        padding: 0 72px;
+    }
+}
+
+@media screen and (max-width: 964px){
+    nav,
+    .main{
+        padding: 0 61px;
+    }
+
+    nav .left a.logo{
+        font-size: 19px;
+    }
+
+    nav .right .links a{
+        font-size: 13px;
+    }
+
+    .main .playlists .title h2,
+    .main .playlists .title i{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 931px){
+    nav,
+    .main{
+        padding: 0 50px;
+    }
+
+    .main .list-ep{
+        padding: 21px;
+    }
+
+    footer p{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 813px){
+    nav,
+    .main{
+        padding: 0 40px;
+    }
+
+    footer p{
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 750px){
+    nav,
+    .main{
+        padding: 0 35px;
+    }
+
+    footer p{
+        font-size: 12px;
+    }
+
+    nav .left a.logo{
+        font-size: 17px;
+    }
+
+    nav .right .links a{
+        font-size: 11px;
+    }
+
+    .main .playlists .title h2,
+    .main .playlists .title i{
+        font-size: 15px;
+    }
+
+    .main .list-ep p{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 669px){
+    .main .list-ep .list a{
+        width: 35px;
+        height: 35px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 555px){
+    nav,
+    .main{
+        padding: 0 25px;
+    }
+
+    nav .left a.logo{
+        font-size: 15px;
+    }
+
+    nav .right .links a{
+        font-size: 10px;
+    }
+
+    footer p{
+        font-size: 11px;
+    }
+
+    .main .movie{
+        aspect-ratio: 16/9;
+    }
+}
+
+@media screen and (max-width: 459px){
+    nav{
+        height: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    nav .right .links a:not(:last-child){
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 418px){
+    .main .list-ep{
+        padding: 15px;
+    }
+
+    .main .list-ep .list a{
+        width: 30px;
+        height: 30px;
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 396px){
+    footer p{
+        font-size: 10px;
+    }
+
+    .main{
+        padding: 0 20px;
+    }
+}
