@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./category-page.css">
+    <title>Siêu Tầm Phim: Lồng Tiếng</title>
+</head>
+<body>
+    <header class="header">
+        <div class="top">
+            <nav class="nav-bar">
+                <div class="left-nav">
+                    <div class="logo">
+                        <a href="#">
+                            <img src="./assets/logo.png" alt="Siêu Tầm Phim">
+                        </a>
+                    </div>
+                </div>
+                <div class="center-nav">
+                    <div class="menu-main">
+                        <ul class="nav-links">
+                            <li class="link active">
+                                <a href="#">
+                                    <button class="home-page">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" style="width: 12px; margin-right: 2px; fill: #fff;"><path d="M543.8 287.6c17 0 32-14 32-32.1c1-9-3-17-11-24L512 185l0-121c0-17.7-14.3-32-32-32l-32 0c-17.7 0-32 14.3-32 32l0 36.7L309.5 7c-6-5-14-7-21-7s-15 1-22 8L10 231.5c-7 7-10 15-10 24c0 18 14 32.1 32 32.1l32 0 0 69.7c-.1 .9-.1 1.8-.1 2.8l0 112c0 22.1 17.9 40 40 40l16 0c1.2 0 2.4-.1 3.6-.2c1.5 .1 3 .2 4.5 .2l31.9 0 24 0c22.1 0 40-17.9 40-40l0-24 0-64c0-17.7 14.3-32 32-32l64 0c17.7 0 32 14.3 32 32l0 64 0 24c0 22.1 17.9 40 40 40l24 0 32.5 0c1.4 0 2.8 0 4.2-.1c1.1 .1 2.2 .1 3.3 .1l16 0c22.1 0 40-17.9 40-40l0-16.2c.3-2.6 .5-5.3 .5-8.1l-.7-160.2 32 0z"/></svg>Trang chủ
+                                    </button>
+                                </a>
+                            </li>
+                            <li class="link"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" style="width: 13px; margin-right: 2px;"><path d="M64 64l0 288 512 0 0-288L64 64zM0 64C0 28.7 28.7 0 64 0L576 0c35.3 0 64 28.7 64 64l0 288c0 35.3-28.7 64-64 64L64 416c-35.3 0-64-28.7-64-64L0 64zM128 448l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-384 0c-17.7 0-32-14.3-32-32s14.3-32 32-32z"/></svg>Truyền hình</a></li>
+                            <li class="link">
+                                <a href="#">Quốc gia<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg></a>
+                                <ul class="sub-menu">
+                                    <li class="link-sub"><a href="#">Phim anh</a></li>
+                                    <li class="link-sub"><a href="#">Phim hàn</a></li>
+                                    <li class="link-sub"><a href="#">Phim nhật</a></li>
+                                </ul>
+                            </li>
+                            <li class="link">
+                                <a href="#">Thể loại<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg></a>
+                                <ul class="sub-menu">
+                                    <li class="link-sub"><a href="#">Phim Bộ</a></li>
+                                    <li class="link-sub"><a href="#">Phim Lẻ</a></li>
+                                    <li class="link-sub"><a href="#">Phim Mới</a></li>
+                                </ul>
+                            </li>
+                            <li class="link">
+                                <a href="#">Album<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg></a>
+                                <ul class="sub-menu">
+                                    <li class="link-sub"><a href="#">1999</a></li>
+                                    <li class="link-sub"><a href="#">2000</a></li>
+                                    <li class="link-sub"><a href="#">2001</a></li>
+                                </ul>
+                            </li>
+                            <li class="link">
+                                <a href="#">FAQ<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg></a>
+                                <ul class="sub-menu">
+                                    <li class="link-sub"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" style="fill: red; width: 14px; margin-right: 3px;"><path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z"/></svg>Youtube</a></li>
+                                    <li class="link-sub"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" style="fill: red; width: 14px; margin-right: 3px;"><path d="M496 256c0 137-111 248-248 248-25.6 0-50.2-3.9-73.4-11.1 10.1-16.5 25.2-43.5 30.8-65 3-11.6 15.4-59 15.4-59 8.1 15.4 31.7 28.5 56.8 28.5 74.8 0 128.7-68.8 128.7-154.3 0-81.9-66.9-143.2-152.9-143.2-107 0-163.9 71.8-163.9 150.1 0 36.4 19.4 81.7 50.3 96.1 4.7 2.2 7.2 1.2 8.3-3.3 .8-3.4 5-20.3 6.9-28.1 .6-2.5 .3-4.7-1.7-7.1-10.1-12.5-18.3-35.3-18.3-56.6 0-54.7 41.4-107.6 112-107.6 60.9 0 103.6 41.5 103.6 100.9 0 67.1-33.9 113.6-78 113.6-24.3 0-42.6-20.1-36.7-44.8 7-29.5 20.5-61.3 20.5-82.6 0-19-10.2-34.9-31.4-34.9-24.9 0-44.9 25.7-44.9 60.2 0 22 7.4 36.8 7.4 36.8s-24.5 103.8-29 123.2c-5 21.4-3 51.6-.9 71.2C65.4 450.9 0 361.1 0 256 0 119 111 8 248 8s248 111 248 248z"/></svg>Pinterest</a></li>
+                                    <li class="link-sub"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" style="fill: #0866FF; width: 14px; margin-right: 3px;"><path d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64h98.2V334.2H109.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H255V480H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z"/></svg>Facebook</a></li>
+                                </ul>
+                            </li>
+                            <li class="link"><a href="#">Donate ủng hộ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="right-nav">
+                    <form>
+                        <input type="text" placeholder="Tìm Kiếm Phim...">
+                        <button class="search-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"><path d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z"></path></svg>
+                        </button>
+                    </form>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="main">
+        <div class="post-container">
+            <div class="posts-all">
+                <div class="title-category">
+                    <span class="title">Hiển thị các bài đăng có nhãn <span class="name-category">Lồng Tiếng.</span></span>
+                </div>
+                <div class="list-movies">
+                    <div class="item">
+                        <a href="#">
+                            <img src="./assets/poster-18.png" width="230" height="290" alt="Thần Điêu Đại Hiệp Lồng Tiếng - Status: 39_39 Lồng Tiếng">
+                            <div class="info">
+                                <div class="title-movies">
+                                    <p>2001</p>
+                                    <h2>Thần Điêu Đại Hiệp Lồng Tiếng - Status: 39_39 Lồng Tiếng</h2>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <img src="./assets/poster-18.png" width="230" height="290" alt="Thần Điêu Đại Hiệp Lồng Tiếng - Status: 39_39 Lồng Tiếng">
+                            <div class="info">
+                                <div class="title-movies">
+                                    <p>2001</p>
+                                    <h2>Thần Điêu Đại Hiệp Lồng Tiếng - Status: 39_39 Lồng Tiếng</h2>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <img src="./assets/poster-18.png" width="230" height="290" alt="Thần Điêu Đại Hiệp Lồng Tiếng - Status: 39_39 Lồng Tiếng">
+                            <div class="info">
+                                <div class="title-movies">
+                                    <p>2001</p>
+                                    <h2>Thần Điêu Đại Hiệp Lồng Tiếng - Status: 39_39 Lồng Tiếng</h2>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <img src="./assets/poster-18.png" width="230" height="290" alt="Thần Điêu Đại Hiệp Lồng Tiếng - Status: 39_39 Lồng Tiếng">
+                            <div class="info">
+                                <div class="title-movies">
+                                    <p>2001</p>
+                                    <h2>Thần Điêu Đại Hiệp Lồng Tiếng - Status: 39_39 Lồng Tiếng</h2>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <img src="./assets/poster-18.png" width="230" height="290" alt="Thần Điêu Đại Hiệp Lồng Tiếng - Status: 39_39 Lồng Tiếng">
+                            <div class="info">
+                                <div class="title-movies">
+                                    <p>2001</p>
+                                    <h2>Thần Điêu Đại Hiệp Lồng Tiếng - Status: 39_39 Lồng Tiếng</h2>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                        <img src="./assets/poster-18.png" width="230" height="290" alt="Thần Điêu Đại Hiệp Lồng Tiếng - Status: 39_39 Lồng Tiếng">
+                            <div class="info">
+                                <div class="title-movies">
+                                    <p>2001</p>
+                                    <h2>Thần Điêu Đại Hiệp Lồng Tiếng - Status: 39_39 Lồng Tiếng</h2>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <img src="./assets/poster-18.png" width="230" height="290" alt="Thần Điêu Đại Hiệp Lồng Tiếng - Status: 39_39 Lồng Tiếng">
+                            <div class="info">
+                                <div class="title-movies">
+                                    <p>2001</p>
+                                    <h2>Thần Điêu Đại Hiệp Lồng Tiếng - Status: 39_39 Lồng Tiếng</h2>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <img src="./assets/poster-18.png" width="230" height="290" alt="Thần Điêu Đại Hiệp Lồng Tiếng - Status: 39_39 Lồng Tiếng">
+                            <div class="info">
+                                <div class="title-movies">
+                                    <p>2001</p>
+                                    <h2>Thần Điêu Đại Hiệp Lồng Tiếng - Status: 39_39 Lồng Tiếng</h2>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <img src="./assets/poster-18.png" width="230" height="290" alt="Thần Điêu Đại Hiệp Lồng Tiếng - Status: 39_39 Lồng Tiếng">
+                            <div class="info">
+                                <div class="title-movies">
+                                    <p>2001</p>
+                                    <h2>Thần Điêu Đại Hiệp Lồng Tiếng - Status: 39_39 Lồng Tiếng</h2>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <img src="./assets/poster-18.png" width="230" height="290" alt="Thần Điêu Đại Hiệp Lồng Tiếng - Status: 39_39 Lồng Tiếng">
+                            <div class="info">
+                                <div class="title-movies">
+                                    <p>2001</p>
+                                    <h2>Thần Điêu Đại Hiệp Lồng Tiếng - Status: 39_39 Lồng Tiếng</h2>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <img src="./assets/poster-18.png" width="230" height="290" alt="Thần Điêu Đại Hiệp Lồng Tiếng - Status: 39_39 Lồng Tiếng">
+                            <div class="info">
+                                <div class="title-movies">
+                                    <p>2001</p>
+                                    <h2>Thần Điêu Đại Hiệp Lồng Tiếng - Status: 39_39 Lồng Tiếng</h2>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <img src="./assets/poster-18.png" width="230" height="290" alt="Thần Điêu Đại Hiệp Lồng Tiếng - Status: 39_39 Lồng Tiếng">
+                            <div class="info">
+                                <div class="title-movies">
+                                    <p>2001</p>
+                                    <h2>Thần Điêu Đại Hiệp Lồng Tiếng - Status: 39_39 Lồng Tiếng</h2>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="more-view">
+                    <a href="#" class="after-button"><i class="fa fa-angle-double-left" aria-hidden="true"></i> Sau</a>
+                    <a href="#" class="before-button">Trước <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <div class="sidebar-section">
+                <div class="evaluate">
+                    <h2>Đánh Giá (Biểu Cảm Của Bạn)</h2>
+                    <div class="widget-content">
+                        <img src="./assets/bieu-cam.png" alt="Biểu Cảm">
+                    </div>
+                </div>
+                <div class="online-fanpage">
+                    <h2>Số Người Trực Tuyến (Online)</h2>
+                    <div class="widget-content">
+                        <img src="./assets/online.png" alt="online" class="online">
+                        <br>
+                        <br>
+                        <h2 class="title-introduce">Các Bạn Hãy Tắt Anti-Block Để Giúp AD Có Chút Kinh Phí Nhé ٩(｡•́‿•̀｡)۶ , Quảng Cáo NHẸ THÔi , HÃY TẮT ADBLOCK GIÚP ỦNG HỘ TRANG👍<br><br>Trang WEB Thực Hiện Bởi Cá Nhân<br>Công Ty 1 Thành Viên 👍<br><br>FANPAGE FACEBOOK (ADMIN)<br>Like + follow page: SIÊU TẦM PHIM<br>Và Tham Gia Nhóm Cùng Chúng Tôi👍</h2>
+                        <div class="facebook-fanpage">
+                            <div class="background-fanpage">
+                                <img src="./assets/bg-fanpage.png" alt="Background Fanpage">
+                            </div>
+                            <div class="profile-fanpage">
+                                <div class="logo-fanpage">
+                                    <img src="./assets/list_source/sieutamphim.png" alt="Logo Fanpage">
+                                </div>
+                                <div class="title-fanpage">
+                                    <a href="#" class="title">Siêu Tầm Phim</a>
+                                    <span class="follow">3.335 người theo dõi</span>
+                                </div>
+                            </div>
+                            <div class="follow-fanpage">
+                                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" style="width: 11px; margin-right: 3px; fill: #455883; margin-bottom: 2px;"><path d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64h98.2V334.2H109.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H255V480H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z"/></svg>Theo dõi trang</a>
+                            </div>
+                        </div>
+                        <div class="facebook-group">
+                            <div class="background-group">
+                                <img src="./assets/bg-group.jpg" alt="Background Group">
+                            </div>
+                            <div class="info-group">
+                                <p class="title-group">Group Siêu/Sưu Tầm Flim</p>
+                                <p class="member-group">Nhóm Facebook - 969 thành viên</p>
+                            </div>
+                            <div class="link-group">
+                                <a href="#">Truy cập nhóm</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="trending">
+                    <h2>🏆Lượt Xem Nhiều Nhất! (Trending)✔️</h2>
+                    <div class="widget-content">
+                        <ul>
+                            <li>
+                                <div class="item">
+                                    <div class="item-poster">
+                                        <a href="#">
+                                            <img src="./assets/poster-21.png" alt="7 Viên Ngọc Rồng HTV3 Lồng Tiếng - Status: 153 / 153 Lồng Tiếng">
+                                        </a>
+                                    </div>
+                                    <div class="item-title">
+                                        <a href="#">7 Viên Ngọc Rồng HTV3 Lồng Tiếng - Status: 153 / 153 Lồng Tiếng</a>
+                                    </div>
+                                    <div class="item-snippet"> THÔNG BÁO : Nếu Phim Không Xem được  VUI LÒNG QUAY LẠI SAU ÍT PHÚT...</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item">
+                                    <div class="item-poster">
+                                        <a href="#">
+                                            <img src="./assets/poster-22.png" alt="Fairy Tail: Hội Pháp Sư HTV3 Lồng Tiếng - Status: 226 / 226  Lồng Tiếng">
+                                        </a>
+                                    </div>
+                                    <div class="item-title">
+                                        <a href="#">Fairy Tail: Hội Pháp Sư HTV3 Lồng Tiếng - Status: 226 / 226  Lồng Tiếng</a>
+                                    </div>
+                                    <div class="item-snippet"> THÔNG BÁO : Nếu Phim Không Xem được  VUI LÒNG QUAY LẠI SAU ÍT PHÚT...</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item">
+                                    <div class="item-poster">
+                                        <a href="#">
+                                            <img src="./assets/poster-23.png" alt="Thám Tử Conan Movie 22: Kẻ Hành Pháp Zero HTV3 Lồng Tiếng - Status: HD Lồng Tiếng">
+                                        </a>
+                                    </div>
+                                    <div class="item-title">
+                                        <a href="#">Thám Tử Conan Movie 22: Kẻ Hành Pháp Zero HTV3 Lồng Tiếng - Status: HD Lồng Tiếng</a>
+                                    </div>
+                                    <div class="item-snippet"> THÔNG BÁO : Nếu Phim Không Xem được  VUI LÒNG QUAY LẠI SAU ÍT PHÚT...</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item">
+                                    <div class="item-poster">
+                                        <a href="#">
+                                            <img src="./assets/poster-18.png" alt="Encanto: Vùng Đất Thần Kỳ Lồng Tiếng - Status: HD Lồng Tiếng">
+                                        </a>
+                                    </div>
+                                    <div class="item-title">
+                                        <a href="#">Encanto: Vùng Đất Thần Kỳ Lồng Tiếng - Status: HD Lồng Tiếng</a>
+                                    </div>
+                                    <div class="item-snippet"> THÔNG BÁO : Nếu Phim Không Xem được  VUI LÒNG QUAY LẠI SAU ÍT PHÚT...</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item">
+                                    <div class="item-poster">
+                                        <a href="#">
+                                            <img src="./assets/poster-24.png" alt="Thám Tử Conan Movie 20: Cơn Ác Mộng Đen Tối HTV3 Lồng Tiếng - Status: HD Lồng Tiếng">
+                                        </a>
+                                    </div>
+                                    <div class="item-title">
+                                        <a href="#">Thám Tử Conan Movie 20: Cơn Ác Mộng Đen Tối HTV3 Lồng Tiếng - Status: HD Lồng Tiếng</a>
+                                    </div>
+                                    <div class="item-snippet"> THÔNG BÁO : Nếu Phim Không Xem được  VUI LÒNG QUAY LẠI SAU ÍT PHÚT...</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item">
+                                    <div class="item-poster">
+                                        <a href="#">
+                                            <img src="./assets/poster-25.png" alt="Kuroko: Tuyển Thủ Vô Hình HTV3 Lồng Tiếng - Status: 78 / 78 Lồng Tiếng">
+                                        </a>
+                                    </div>
+                                    <div class="item-title">
+                                        <a href="#">Kuroko: Tuyển Thủ Vô Hình HTV3 Lồng Tiếng - Status: 78 / 78 Lồng Tiếng</a>
+                                    </div>
+                                    <div class="item-snippet"> THÔNG BÁO : Nếu Phim Không Xem được  VUI LÒNG QUAY LẠI SAU ÍT PHÚT...</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item">
+                                    <div class="item-poster">
+                                        <a href="#">
+                                            <img src="./assets/poster-26.png" alt="Thám Tử Conan Movie 21: Bản Tình Ca Màu Đỏ Thẫm HTV3 Lồng Tiếng - Status: HD Lồng Tiếng">
+                                        </a>
+                                    </div>
+                                    <div class="item-title">
+                                        <a href="#">Thám Tử Conan Movie 21: Bản Tình Ca Màu Đỏ Thẫm HTV3 Lồng Tiếng - Status: HD Lồng Tiếng</a>
+                                    </div>
+                                    <div class="item-snippet"> THÔNG BÁO : Nếu Phim Không Xem được  VUI LÒNG QUAY LẠI SAU ÍT PHÚT...</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item">
+                                    <div class="item-poster">
+                                        <a href="#">
+                                            <img src="./assets/poster-11.png" alt="Gia Đình Croods: Kỷ Nguyên Mới Lồng Tiếng - Status: HD Lồng Tiếng">
+                                        </a>
+                                    </div>
+                                    <div class="item-title">
+                                        <a href="#">Gia Đình Croods: Kỷ Nguyên Mới Lồng Tiếng - Status: HD Lồng Tiếng</a>
+                                    </div>
+                                    <div class="item-snippet"> THÔNG BÁO : Nếu Phim Không Xem được  VUI LÒNG QUAY LẠI SAU ÍT PHÚT...</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item">
+                                    <div class="item-poster">
+                                        <a href="#">
+                                            <img src="./assets/poster-27.png" alt="Thám Tử Conan Movie 25: Nàng Dâu Halloween TVH Thuyết Minh - Status: HD Thuyết Minh">
+                                        </a>
+                                    </div>
+                                    <div class="item-title">
+                                        <a href="#">Thám Tử Conan Movie 25: Nàng Dâu Halloween TVH Thuyết Minh - Status: HD Thuyết Minh</a>
+                                    </div>
+                                    <div class="item-snippet"> THÔNG BÁO : Nếu Phim Không Xem được  VUI LÒNG QUAY LẠI SAU ÍT PHÚT...</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item">
+                                    <div class="item-poster">
+                                        <a href="#">
+                                            <img src="./assets/poster-28.jpg" alt="Thám Tử Conan Movie 4: Thủ Phạm Trong Đôi Mắt HTV3 Lồng Tiếng - Status: HD Lồng Tiếng">
+                                        </a>
+                                    </div>
+                                    <div class="item-title">
+                                        <a href="#">Thám Tử Conan Movie 4: Thủ Phạm Trong Đôi Mắt HTV3 Lồng Tiếng - Status: HD Lồng Tiếng</a>
+                                    </div>
+                                    <div class="item-snippet"> THÔNG BÁO : Nếu Phim Không Xem được  VUI LÒNG QUAY LẠI SAU ÍT PHÚT...</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="all-tags">
+                    <h2>Tất Cả Từ Khóa</h2>
+                    <div class="widget-content">
+                        <span class="tag-title"><a href="#">ACE MEDIA</a></span>
+                        <span class="tag-title"><a href="#">Apple TV+</a></span>
+                        <span class="tag-title"><a href="#">Bản Quyền</a></span>
+                        <span class="tag-title"><a href="#">Báo Lỗi Phim</a></span>
+                        <span class="tag-title"><a href="#">Boomerang Vietnam</a></span>
+                        <span class="tag-title"><a href="#">Câu Trả Lời</a></span>
+                        <span class="tag-title"><a href="#">CGV Cinemas Vietnam</a></span>
+                        <span class="tag-title"><a href="#">Clip TV</a></span>
+                        <span class="tag-title"><a href="#">DANET</a></span>
+                        <span class="tag-title"><a href="#">FPT Play</a></span>
+                        <span class="tag-title"><a href="#">Friends - Group</a></span>
+                        <span class="tag-title"><a href="#">Galaxy Play</a></span>
+                        <span class="tag-title"><a href="#">HDVietnam & Fshare</a></span>
+                        <span class="tag-title"><a href="#">Hibiki Laura & Barbie Vietnam</a></span>
+                        <span class="tag-title"><a href="#">HTV2</a></span>
+                        <span class="tag-title"><a href="#">HTV3</a></span>
+                        <span class="tag-title"><a href="#">HTV7</a></span>
+                        <span class="tag-title"><a href="#">IQIYI</a></span>
+                        <span class="tag-title"><a href="#">JenkaStudioVN | NetHD</a></span>
+                        <span class="tag-title"><a href="#">Lồng Tiếng</a></span>
+                        <span class="tag-title"><a href="#">My Video: Siêu Tầm Phim</a></span>
+                        <span class="tag-title"><a href="#">Netflix</a></span>
+                        <span class="tag-title"><a href="#">Phim Anh</a></span>
+                        <span class="tag-title"><a href="#">Phim Bộ</a></span>
+                        <span class="tag-title"><a href="#">Phim Đài Loan</a></span>
+                        <span class="tag-title"><a href="#">Phim Hàn Quốc</a></span>
+                        <span class="tag-title"><a href="#">Phim Khác</a></span>
+                        <span class="tag-title"><a href="#">Phim Lẻ</a></span>
+                        <span class="tag-title"><a href="#">Phim Mới</a></span>
+                        <span class="tag-title"><a href="#">Phim Mỹ</a></span>
+                        <span class="tag-title"><a href="#">Phim Nhật Bản</a></span>
+                        <span class="tag-title"><a href="#">Phim Pháp</a></span>
+                        <span class="tag-title"><a href="#">Phim Tây Ban Nha</a></span>
+                        <span class="tag-title"><a href="#">Phim Thái Lan</a></span>
+                        <span class="tag-title"><a href="#">Phim Trung Quốc</a></span>
+                        <span class="tag-title"><a href="#">Phim Úc</a></span>
+                        <span class="tag-title"><a href="#">Phim Việt Nam</a></span>
+                        <span class="tag-title"><a href="#">POPS</a></span>
+                        <span class="tag-title"><a href="#">REMUX</a></span>
+                        <span class="tag-title"><a href="#">SCTV Online</a></span>
+                        <span class="tag-title"><a href="#">TeenNick</a></span>
+                        <span class="tag-title"><a href="#">Thuyết Minh</a></span>
+                        <span class="tag-title"><a href="#">Tiếng Việt</a></span>
+                        <span class="tag-title"><a href="#">Truyền Hình</a></span>
+                        <span class="tag-title"><a href="#">TV360</a></span>
+                        <span class="tag-title"><a href="#">tvBlue DRAMA</a></span>
+                        <span class="tag-title"><a href="#">TVH</a></span>
+                        <span class="tag-title"><a href="#">VieON</a></span>
+                        <span class="tag-title"><a href="#">VTV</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-top">
+            <h2>Tổng Hợp Nguồn Danh Sách | Các Kênh Truyền Hình Xã Hội Của Việt Nam</h2>
+            <div class="list-source">
+                <div class="item">
+                    <img src="./assets/list_source/nhan_dan.png">
+                    <span>TH Nhân Dân</span>
+                </div>
+                <div class="item">
+                    <img src="./assets/list_source/binh_phuoc.png">
+                    <span>TH Bình Phước</span>
+                </div>
+                <div class="item">
+                    <img src="./assets/list_source/quanh_ninh.png">
+                    <span>TH Quảng Ninh</span>
+                </div>
+                <div class="item">
+                    <img src="./assets/list_source/thong_tan_xa_hoi_viet_nam.png">
+                    <span>TH Thông Tấn Xã Việt Nam</span>
+                </div>
+                <div class="item">
+                    <img src="./assets/list_source/thua_thien_hue.png">
+                    <span>TH Thừa Thiên Huế</span>
+                </div>
+                <div class="item">
+                    <img src="./assets/list_source/thai_nguyen.png">
+                    <span>TH Thái Nguyên</span>
+                </div>
+                <div class="item">
+                    <img src="./assets/list_source/quoc_hoi.png">
+                    <span>TH Quốc Hội</span>
+                </div>
+                <div class="item">
+                    <img src="./assets/list_source/nghe_an.png">
+                    <span>TH Nghệ An</span>
+                </div>
+                <div class="item">
+                    <img src="./assets/list_source/nam_ha.png">
+                    <span>TH Hà Nam</span>
+                </div>
+                <div class="item">
+                    <img src="./assets/list_source/tuyen_quang.png">
+                    <span>TH Tuyên Quang</span>
+                </div>
+            </div>
+        </div>
+        <div class="footer-center">
+            <div class="footer-widget">
+                <div class="widget">
+                    <h2>Tổng Hợp Nguồn Các Thương Hiệu (Có Bản Quyền)</h2>
+                    <div class="list-source">
+                        <div class="item">
+                            <img src="./assets/list_source/cgvvietnam.jpg">
+                            <span>CGV Cinemas Vietnam</span>
+                        </div>
+                        <div class="item">
+                            <img src="./assets/list_source/netflix.png">
+                            <span>Netflix</span>
+                        </div>
+                        <div class="item">
+                            <img src="./assets/list_source/hbo.png">
+                            <span>HBO</span>
+                        </div>
+                        <div class="item">
+                            <img src="./assets/list_source/kplus.png">
+                            <span>Kplus</span>
+                        </div>
+                        <div class="item">
+                            <img src="./assets/list_source/vtv.png">
+                            <span>VTV</span>
+                        </div>
+                        <div class="item">
+                            <img src="./assets/list_source/todaytv.png">
+                            <span>TodayTV</span>
+                        </div>
+                        <div class="item">
+                            <img src="./assets/list_source/galaxy_play.png">
+                            <span>Galaxy Play</span>
+                        </div>
+                        <div class="item">
+                            <img src="./assets/list_source/cartoon_network.png">
+                            <span>Cartoom Network</span>
+                        </div>
+                        <div class="item">
+                            <img src="./assets/list_source/boomerang_vietnam.png">
+                            <span>Boomerang Vietnam</span>
+                        </div>
+                        <div class="item">
+                            <img src="./assets/list_source/fpt_play.png">
+                            <span>FPT Play</span>
+                        </div>
+                        <div class="item">
+                            <img src="./assets/list_source/pops.png">
+                            <span>POPS</span>
+                        </div>
+                        <div class="item">
+                            <img src="./assets/list_source/iqiyi.png">
+                            <span>IQIYI</span>
+                        </div>
+                        <div class="item">
+                            <img src="./assets/list_source/htv2.png">
+                            <span>HTV2</span>
+                        </div>
+                        <div class="item">
+                            <img src="./assets/list_source/vieon.png">
+                            <span>VieON</span>
+                        </div>
+                        <div class="item">
+                            <img src="./assets/list_source/htv3.png">
+                            <span>HTV3</span>
+                        </div>
+                        <div class="item">
+                            <img src="./assets/list_source/teennick.png">
+                            <span>TeenNick</span>
+                        </div>
+                        <div class="item">
+                            <img src="./assets/list_source/htv7.png">
+                            <span>HTV7</span>
+                        </div>
+                        <div class="item">
+                            <img src="./assets/list_source/tv360.png">
+                            <span>TV360</span>
+                        </div>
+                        <div class="item">
+                            <img src="./assets/list_source/thvli.png">
+                            <span>THVLi</span>
+                        </div>
+                        <div class="item">
+                            <img src="./assets/list_source/lady_tv.png">
+                            <span>Lady TV</span>
+                        </div>
+                        <div class="item">
+                            <img src="./assets/list_source/sctv_online.png">
+                            <span>SCTV Online</span>
+                        </div>
+                        <div class="item">
+                            <img src="./assets/list_source/clip_tv.png">
+                            <span>Clip TV</span>
+                        </div>
+                        <div class="item">
+                            <img src="./assets/list_source/danet.png">
+                            <span>DANET</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-widget">
+                <div class="widget">
+                    <h2>Tổng Hợp Nguồn Các Fandom & Hội Nhóm (Không Bản Quyền)</h2>
+                    <div class="list-source">
+                        <div class="item">
+                            <img src="./assets/list_source/hdvietnam.png">
+                            <span>HDVietnam</span>
+                        </div>
+                        <div class="item">
+                            <img src="./assets/list_source/fshare.png">
+                            <span>Fshare</span>
+                        </div>
+                        <div class="item">
+                            <img src="./assets/list_source/dvd.png">
+                            <span>DVD</span>
+                        </div>
+                        <div class="item">
+                            <img src="./assets/list_source/yumei_anime.png">
+                            <span>Yumei-Anime</span>
+                        </div>
+                        <div class="item">
+                            <img src="./assets/list_source/jenkastudiovn.png">
+                            <span>JenkaStudioVN</span>
+                        </div>
+                        <div class="item">
+                            <img src="./assets/list_source/nethd.png">
+                            <span>NetHD</span>
+                        </div>
+                        <div class="item">
+                            <img src="./assets/list_source/ace_media.png">
+                            <span>ACE MEDIA</span>
+                        </div>
+                        <div class="item">
+                            <img src="./assets/list_source/we_love_htv3.png">
+                            <span>We Love Group</span>
+                        </div>
+                        <div class="item">
+                            <img src="./assets/list_source/laura_hibiki.png">
+                            <span>Hibiki Laura</span>
+                        </div>
+                        <div class="item">
+                            <img src="./assets/list_source/barbie_vietnam.png">
+                            <span>Barbie Vietnam</span>
+                        </div>
+                        <div class="item">
+                            <img src="./assets/list_source/tvblue.png">
+                            <span>tvBlue DRAMA</span>
+                        </div>
+                        <div class="item">
+                            <img src="./assets/list_source/tvh.png">
+                            <span>TVH</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="widget">
+                    <h2>Tổng Hợp Danh Sách Nguồn | Server Stream Phim (iFrame)</h2>
+                    <div class="list-source">
+                        <div class="item">
+                            <img src="./assets/list_source/youtube.png">
+                            <span>|YT.# Youtube</span>
+                        </div>
+                        <div class="item">
+                            <img src="./assets/list_source/vkontakte.png">
+                            <span>|VK.# VKontakte</span>
+                        </div>
+                        <div class="item">
+                            <img src="./assets/list_source/odnoklassniki.png">
+                            <span>|OK.# Odnoklassniki</span>
+                        </div>
+                        <div class="item">
+                            <img src="./assets/list_source/hydrax.png">
+                            <span>|HX.# Hydrax</span>
+                        </div>
+                        <div class="item">
+                            <img src="./assets/list_source/ogimage.png">
+                            <span>|SN.# Sibnet</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-widget">
+                <div class="widget">
+                    <h2>Tổng Hợp Danh Sách | Nguồn Các Quốc Gia</h2>
+                    <div class="list-source">
+                        <div class="item">
+                            <img src="./assets/list_source/us.png">
+                            <span>Phim Mỹ</span>
+                        </div>
+                        <div class="item">
+                            <img src="./assets/list_source/au.png">
+                            <span>Phim Úc</span>
+                        </div>
+                        <div class="item">
+                            <img src="./assets/list_source/uk.png">
+                            <span>Phim Anh</span>
+                        </div>
+                        <div class="item">
+                            <img src="./assets/list_source/ru.png">
+                            <span>Phim Nga</span>
+                        </div>
+                        <div class="item">
+                            <img src="./assets/list_source/fr.png">
+                            <span>Phim Pháp</span>
+                        </div>
+                        <div class="item">
+                            <img src="./assets/list_source/in.png">
+                            <span>Phim Ấn Độ</span>
+                        </div>
+                        <div class="item">
+                            <img src="./assets/list_source/sg.png">
+                            <span>Phim Singapore</span>
+                        </div>
+                        <div class="item">
+                            <img src="./assets/list_source/th.png">
+                            <span>Phim Thái Lan</span>
+                        </div>
+                        <div class="item">
+                            <img src="./assets/list_source/vn.png">
+                            <span>Phim Việt Nam</span>
+                        </div>
+                        <div class="item">
+                            <img src="./assets/list_source/tw.png">
+                            <span>Phim Đài Loan</span>
+                        </div>
+                        <div class="item">
+                            <img src="./assets/list_source/kr.png">
+                            <span>Phim Hàn Quốc</span>
+                        </div>
+                        <div class="item">
+                            <img src="./assets/list_source/jp.png">
+                            <span>Phim Nhật Bản</span>
+                        </div>
+                        <div class="item">
+                            <img src="./assets/list_source/ph.png">
+                            <span>Phim Philippines</span>
+                        </div>
+                        <div class="item">
+                            <img src="./assets/list_source/hk.png">
+                            <span>Phim Hồng Kông</span>
+                        </div>
+                        <div class="item">
+                            <img src="./assets/list_source/cn.png">
+                            <span>Phim Trung Quốc</span>
+                        </div>
+                        <div class="item">
+                            <img src="./assets/list_source/es.png">
+                            <span>Phim Tây Ban Nha</span>
+                        </div>
+                        <div class="item">
+                            <img src="./assets/list_source/phim_khac.png">
+                            <span>Phim Khác</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="widget">
+                    <h2>Liên Hệ Hợp Tác & Khiếu Nại Nội Dung #!</h2>
+                    <div class="bottom-source list-source">
+                        <div class="item">
+                            <img src="./assets/list_source/sieutamphim.png">
+                            <p class="sieutamphim">Siêu Tầm Phim</p>
+                            <p><i class="material-icons">email</i>Email: websieutamphim@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="credit">
+                <span>Copyright © 2024 <a href="#">Siêu Tầm Phim</a> | Là Nơi Sao Lưu Siêu Tầm Chia Sẻ - Tổng Hợp Nguồn Các Bộ Phim Độc Quyền Tại Việt Nam <a href="#">sieutamphim.com</a></span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
