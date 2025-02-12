@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body{
+    background-color: #141414;
+    color: #fff;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    outline: none;
+}
+
+img{
+    object-fit: cover;
+}
+
+header,
+.main,
+.color-footer{
+    width: 1300px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+header{
+    height: 68px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+header nav{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav .left-nav a{
+    color: #01e75d;
+    font-size: 23px;
+    font-weight: 700;
+}
+
+header nav .right-nav a{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+header nav .right-nav a:not(:last-child){
+    margin-right: 10px;
+}
+
+header nav .form-input form{
+    width: 210px;
+    height: 30px;
+}
+
+header nav .form-input form input{
+    width: 100%;
+    height: 100%;
+    padding: 0 10px;
+    outline: none;
+    background-color: #3d3d3d;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.main{
+    margin-top: 20px;
+}
+
+.main .featured-movie{
+    position: relative;
+    width: 100%;
+    height: 550px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.main .featured-movie img.bg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.main .featured-movie .title-button{
+    position: absolute;
+    height: 100%;
+    width: 900px;
+    background: linear-gradient(to right, #750eeb, transparent);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main .featured-movie .title-button img{
+    margin-top: 70px;
+    margin-left: 70px;
+    margin-bottom: 10px;
+    width: 279px;
+}
+
+.main .featured-movie .title-button p{
+    color: #fff;
+    margin-left: 70px;
+    margin-bottom: 15px;
+    width: 350px;
+    font-weight: 500;
+}
+
+.main .featured-movie .title-button a {
+    margin-left: 70px;
+}
+
+.main .featured-movie .title-button a i{
+    font-size: 25px;
+    border-radius: 50%;
+}
+
+.main .random-movie{
+    margin-top: 50px !important;
+}
+
+.main .list-movie{
+    margin-top: 70px;
+}
+
+.main .list-movie h2{
+    color: #fff;
+    margin-bottom: 18px;
+}
+
+.main .list-movie .slider{
+    display: flex;
+    justify-content: space-between;
+}
+
+.main .list-movie .slider .item a .poster{
+    width: 245px;
+    aspect-ratio: 245 / 345;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.main .list-movie .slider .item a .play-button{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.main .list-movie .slider .item a:hover .play-button {
+    opacity: 1;
+}
+
+.main .list-movie .slider .item a .play-button .icon-play{
+    width: 29px;
+}
+
+.main .list-movie .slider .item a .play-button .icon-play path{
+    fill: #fff;
+}
+
+.main .list-movie .slider .item a .poster img{
+    width: 100%;
+    height: 100%;
+}
+
+.main .list-movie .slider .item a span{
+    font-size: 17px;
+    font-weight: 500;
+}
+
+footer{
+    background-color: #191919;
+    height: 500px;
+    margin-top: 90px;
+}
+
+footer .color-footer{
+    padding: 30px 0;
+}
+
+footer .color-footer p{
+    color: #fff;
+}
+
+
+@media screen and (max-width: 1400px) {
+    header,
+    .main,
+    .color-footer{
+        width: 1190px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    .main .list-movie .slider .item a .poster{
+        width: 230px;
+    }
+
+    .main .list-movie .slider .item a span{
+        font-size: 15px;
+    }
+
+    .main .list-movie h2{
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    header,
+    .main,
+    .color-footer{
+        width: 1100px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    .main .list-movie .slider .item a .poster{
+        width: 207px;
+        border-radius: 7px;
+    }
+
+    .main .list-movie .slider .item a span{
+        font-size: 14px;
+    }
+
+    .main .featured-movie{
+        height: 530px;
+    }
+}
