@@ -1,0 +1,233 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+::-webkit-scrollbar{
+    width: 4px;
+    height: 8px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 2px;
+    background-color: #1263dd;
+    transition: all 400ms ease-in-out;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: #565858;
+}
+
+::-webkit-scrollbar-track{
+    background-color: rgba(0,0,0,.1);
+    border-radius: 10px;
+}
+
+body{
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    object-fit: cover;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+button{
+    border: none;
+}
+
+.sidebar{
+    background: #f8fafc;
+    width: 5%;
+    height: 100%;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar img{
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}
+
+.sidebar .navbar,
+.sidebar .setting{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.sidebar .navbar .item i,
+.sidebar .setting .item i{
+    font-size: 25px;
+    color: #b9bec6;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.sidebar .navbar .item.active i,
+.sidebar .navbar .item i:hover,
+.sidebar .setting .item.active i,
+.sidebar .setting .item i:hover{
+    color: #1263dd;
+}
+
+.main{
+    background-color: #f8fafc;
+    width: 65%;
+    padding: 24px;
+    border-radius: 20px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    overflow: hidden;
+}
+
+.main .title h1{
+    margin-bottom: 20px;
+    font-size: 27px;
+    font-weight: 700;
+    color: #6d6d6d;
+}
+
+.main .schedule{
+    height: 100%;
+    overflow: auto;
+    border-radius: 6px;
+}
+
+.main .schedule .item{
+    width: 100%;
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.main .schedule .item h2{
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.main .schedule .item .subject{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 0;
+    border-bottom: 1px solid #d1d1d1;
+    transition: all 0.5s ease;
+}
+
+.main .schedule .item .subject:hover{
+    background-color: #d6eaf8;
+}
+
+.main .schedule .item .subject span{
+    font-size: 15px;
+    font-weight: 400;
+    color: #2980b9;
+}
+
+.main .schedule .item .subject .left-info{
+    display: flex;
+    align-items: center;
+}
+
+.main .schedule .item .subject .left-info .number-subject{
+    width: 23px;
+}
+
+.main .schedule .item .subject .left-info .name-subject{
+    font-weight: 600;
+}
+
+.score-section{
+    width: 27%;
+    height: 100%;
+    background-color: #f8fafc;
+    border-radius: 20px;
+    padding: 24px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.score-section .all-score .item{
+    background-color: #fff;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin-bottom: 24px;
+    cursor: pointer;
+    transition: all 0.7s ease;
+}
+
+.score-section .all-score .item:hover{
+    box-shadow: none;
+}
+
+.score-section .all-score .item .score-subject{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.score-section .all-score .item .score-subject .name-score{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.score-section .all-score .item .score-subject .average-score{
+    padding: 5px 14px;
+    background-color: #48ca48;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.score-section .all-score .item .list-scrore{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.score-section .all-score .item .list-scrore .score-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+    width: 18%;
+}
+
+.score-section .all-score .item .list-scrore .score-item .score-day{
+    color: #48ca48;
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.score-section .all-score .item .list-scrore .score-item .score{
+    color: #48ca48;
+    font-size: 17px;
+    font-weight: 500;
+}
