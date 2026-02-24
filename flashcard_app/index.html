@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Flashcards - Glassmorphism</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body class="dark-theme">
+    <div class="background-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <header>
+        <div class="logo">Flash<span>Cards</span></div>
+        <button id="theme-toggle" class="glass-btn" aria-label="Toggle Theme">
+            <span class="icon">🌙</span>
+        </button>
+    </header>
+
+    <main>
+        <div id="flashcard-container">
+            <div class="flashcard" id="main-card">
+                <div class="card-inner">
+                    <div class="card-front glass">
+                        <div class="card-content">
+                            <p id="question">Đang tải câu hỏi...</p>
+                        </div>
+                        <div class="hint">Nhấp để xem đáp án</div>
+                    </div>
+                    <div class="card-back glass">
+                        <div class="card-content">
+                            <p id="answer">Đang tải câu trả lời...</p>
+                        </div>
+                        <div class="hint">Nhấp để quay lại</div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="finish-card" class="glass hidden">
+                <div class="card-content">
+                    <div class="completion-icon">🎉</div>
+                    <h2>Hoàn thành!</h2>
+                    <p>Bạn đã xem hết tất cả các thẻ flashcard.</p>
+                    <button id="restart-btn" class="glass-btn">Học lại</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <div id="progress-text">Thẻ: 0/0</div>
+            <button id="next-btn" class="glass-btn">Tiếp theo →</button>
+        </div>
+    </main>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

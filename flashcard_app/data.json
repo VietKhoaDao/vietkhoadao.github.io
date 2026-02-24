@@ -1,0 +1,18 @@
+[
+  {
+    "question": "HTML là gì?",
+    "answer": "HyperText Markup Language - Ngôn ngữ đánh dấu siêu văn bản."
+  },
+  {
+    "question": "CSS là gì?",
+    "answer": "Cascading Style Sheets - Ngôn ngữ dùng để tìm và định dạng các phần tử Web."
+  },
+  {
+    "question": "JavaScript là gì?",
+    "answer": "JavaScript là ngôn ngữ lập trình kịch bản dựa trên đối tượng cho các trang web."
+  },
+  {
+    "question": "Glassmorphism là gì?",
+    "answer": "Một xu hướng thiết kế giao diện với hiệu ứng mờ ảo giống như kính trong suốt."
+  }
+]
