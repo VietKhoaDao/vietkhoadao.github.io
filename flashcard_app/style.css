@@ -26,6 +26,7 @@ body.light-theme {
     padding: 0;
     box-sizing: border-box;
     font-family: 'Outfit', sans-serif;
+    -webkit-tap-highlight-color: transparent;
 }
 
 body {
@@ -130,9 +131,16 @@ body.dark-theme .logo {
     font-weight: 500;
 }
 
-.glass-btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+@media (hover: hover) {
+    .glass-btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+}
+
+.glass-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Main Content */
@@ -225,6 +233,14 @@ main {
     text-align: center;
 }
 
+#finish-card h2 {
+    margin-bottom: 0.5rem;
+}
+
+#finish-card p {
+    margin-bottom: 1.5rem;
+}
+
 .hidden {
     display: none !important;
 }
@@ -235,7 +251,8 @@ main {
 }
 
 .controls {
-    margin-top: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -250,5 +267,17 @@ main {
 @media (max-width: 600px) {
     #flashcard-container {
         height: 400px;
+    }
+
+    .card-content p {
+        font-size: 1.25rem;
+    }
+
+    #finish-card h2 {
+        font-size: 1.8rem;
+    }
+
+    .completion-icon {
+        font-size: 3.5rem;
     }
 }
