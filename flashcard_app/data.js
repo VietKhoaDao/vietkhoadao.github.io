@@ -1,194 +1,235 @@
 const flashcards = [
-    {
-        "question": "аэропорты",
-        "answer": "аэропОрты"
-    },
-    {
-        "question": "аэропорт",
-        "answer": "аэропОрт"
-    },
-    {
-        "question": "банты",
-        "answer": "бАнты"
-    },
-    {
-        "question": "бороду",
-        "answer": "бОроду"
-    },
-    {
-        "question": "борода",
-        "answer": "бородА"
-    },
-    {
-        "question": "бухгалтеров",
-        "answer": "бухгАлтеров"
-    },
-    {
-        "question": "бухгалтер",
-        "answer": "бухгАлтер"
-    },
-    {
-        "question": "вероисповедание",
-        "answer": "вероисповЕдание"
-    },
-    {
-        "question": "водопровод",
-        "answer": "водопровОд"
-    },
-    {
-        "question": "газопровод",
-        "answer": "газопровОд"
-    },
-    {
-        "question": "гражданство",
-        "answer": "граждАнство"
-    },
-    {
-        "question": "дефис",
-        "answer": "дефИс"
-    },
-    {
-        "question": "дешевизна",
-        "answer": "дешевИзна"
-    },
-    {
-        "question": "диспансер",
-        "answer": "диспансЕр"
-    },
-    {
-        "question": "договорённость",
-        "answer": "договорённость"
-    },
-    {
-        "question": "документ",
-        "answer": "докумЕнт"
-    },
-    {
-        "question": "досуг",
-        "answer": "досУг"
-    },
-    {
-        "question": "еретик",
-        "answer": "еретИк"
-    },
-    {
-        "question": "жалюзи",
-        "answer": "жалюзИ"
-    },
-    {
-        "question": "значимость",
-        "answer": "знАчимость"
-    },
-    {
-        "question": "Иксы",
-        "answer": "Иксы"
-    },
-    {
-        "question": "каталог",
-        "answer": "каталОг"
-    },
-    {
-        "question": "квартал (во всех значениях)",
-        "answer": "квартАл"
-    },
-    {
-        "question": "километр",
-        "answer": "киломЕтр"
-    },
-    {
-        "question": "конусов",
-        "answer": "кОнусов"
-    },
-    {
-        "question": "конус",
-        "answer": "кОнус"
-    },
-    {
-        "question": "корысть",
-        "answer": "корЫсть"
-    },
-    {
-        "question": "краны",
-        "answer": "крАны"
-    },
-    {
-        "question": "кремень",
-        "answer": "кремЕнь"
-    },
-    {
-        "question": "кремня",
-        "answer": "кремнЯ"
-    },
-    {
-        "question": "лекторов",
-        "answer": "лЕкторов"
-    },
-    {
-        "question": "локтя",
-        "answer": "лОктя"
-    },
-    {
-        "question": "локтей",
-        "answer": "локтЕй"
-    },
-    {
-        "question": "лыжня",
-        "answer": "лыжня"
-    },
-    {
-        "question": "местностей",
-        "answer": "мЕстностей"
-    },
-    {
-        "question": "местность",
-        "answer": "мЕстность"
-    },
-    {
-        "question": "намерение",
-        "answer": "намЕрение"
-    },
-    {
-        "question": "нарост",
-        "answer": "нарОст"
-    },
-    {
-        "question": "недруг",
-        "answer": "нЕдруг"
-    },
-    {
-        "question": "недуг",
-        "answer": "недУг"
-    },
-    {
-        "question": "некролог",
-        "answer": "некролОг"
-    },
-    {
-        "question": "ненависть",
-        "answer": "нЕнависть"
-    },
-    {
-        "question": "нефтепровод",
-        "answer": "нефтепровОд"
-    },
-    {
-        "question": "новостей",
-        "answer": "новостЕй"
-    },
-    {
-        "question": "ногтя",
-        "answer": "нОгтя"
-    },
-    {
-        "question": "ногтей",
-        "answer": "ногтЕй"
-    },
-    {
-        "question": "отзыв (о книге)",
-        "answer": "Отзыв"
-    },
-    {
-        "question": "отзыв (посла из страны)",
-        "answer": "отзЫв"
-    }
+    {"question": "аэропорты", "answer": "аэропОрты"},
+    {"question": "аэропорт", "answer": "аэропОрт"},
+    {"question": "банты", "answer": "бАнты"},
+    {"question": "бороду", "answer": "бОроду"},
+    {"question": "борода", "answer": "бородА"},
+    {"question": "бухгалтеров", "answer": "бухгАлтеров"},
+    {"question": "бухгалтер", "answer": "бухгАлтер"},
+    {"question": "вероисповедание", "answer": "вероисповЕдание"},
+    {"question": "водопровод", "answer": "водопровОд"},
+    {"question": "газопровод", "answer": "газопровОд"},
+    {"question": "гражданство", "answer": "граждАнство"},
+    {"question": "дефис", "answer": "дефИс"},
+    {"question": "дешевизна", "answer": "дешевИзна"},
+    {"question": "диспансер", "answer": "диспансЕр"},
+    {"question": "договоренность", "answer": "договорЁнность"},
+    {"question": "документ", "answer": "докумЕнт"},
+    {"question": "досуг", "answer": "досУг"},
+    {"question": "еретик", "answer": "еретИк"},
+    {"question": "жалюзи", "answer": "жалюзИ"},
+    {"question": "значимость", "answer": "значИмость"},
+    {"question": "иксы", "answer": "Иксы"},
+    {"question": "каталог", "answer": "каталОг"},
+    {"question": "квартал", "answer": "квартАл"},
+    {"question": "километр", "answer": "киломЕтр"},
+    {"question": "конусов", "answer": "кОнусов"},
+    {"question": "конус", "answer": "кОнус"},
+    {"question": "корысть", "answer": "корЫсть"},
+    {"question": "краны", "answer": "крАны"},
+    {"question": "кремень", "answer": "кремЕнь"},
+    {"question": "лекторов", "answer": "лЕкторов"},
+    {"question": "локтя", "answer": "лОктя"},
+    {"question": "локтей", "answer": "локтЕй"},
+    {"question": "лыжня", "answer": "лыжнЯ"},
+    {"question": "местностей", "answer": "мЕстностей"},
+    {"question": "местность", "answer": "мЕстность"},
+    {"question": "намерение", "answer": "намЕрение"},
+    {"question": "нарост", "answer": "нарОст"},
+    {"question": "недруг", "answer": "нЕдруг"},
+    {"question": "недуг", "answer": "недУг"},
+    {"question": "некролог", "answer": "некролОг"},
+    {"question": "ненависть", "answer": "нЕнависть"},
+    {"question": "нефтепровод", "answer": "нефтепровОд"},
+    {"question": "новостей", "answer": "новостЕй"},
+    {"question": "ногтя", "answer": "нОгтя"},
+    {"question": "ногтей", "answer": "ногтЕй"},
+    {"question": "отзыв", "answer": "Отзыв"},
+    {"question": "отзыв", "answer": "отзЫв"},
+    {"question": "отрочество", "answer": "Отрочество"},
+    {"question": "портфель", "answer": "портфЕль"},
+    {"question": "поручни", "answer": "пОручни"},
+    {"question": "приданое", "answer": "придАное"},
+    {"question": "призыв", "answer": "призЫв"},
+    {"question": "свекла", "answer": "свЁкла"},
+    {"question": "сироты", "answer": "сирОты"},
+    {"question": "созыв", "answer": "созЫв"},
+    {"question": "сосредоточение", "answer": "сосредотОчение"},
+    {"question": "средства", "answer": "срЕдства"},
+    {"question": "статуя", "answer": "стАтуя"},
+    {"question": "столяр", "answer": "столЯр"},
+    {"question": "таможня", "answer": "тамОжня"},
+    {"question": "торты", "answer": "тОрты"},
+    {"question": "туфля", "answer": "тУфля"},
+    {"question": "цемент", "answer": "цемЕнт"},
+    {"question": "центнер", "answer": "цЕнтнер"},
+    {"question": "цепочка", "answer": "цепОчка"},
+    {"question": "шарфы", "answer": "шАрфы"},
+    {"question": "шофер", "answer": "шофЁр"},
+    {"question": "эксперт", "answer": "экспЕрт"},
+    {"question": "верна", "answer": "вернА"},
+    {"question": "знакомый", "answer": "знакОмый"},
+    {"question": "красивее", "answer": "красИвее"},
+    {"question": "красивейший", "answer": "красИвейший"},
+    {"question": "кухонный", "answer": "кУхонный"},
+    {"question": "ловка", "answer": "ловкА"},
+    {"question": "мозаичный", "answer": "мозАичный"},
+    {"question": "оптовый", "answer": "оптОвый"},
+    {"question": "прозорливый", "answer": "прозорлИвый"},
+    {"question": "прозорлива", "answer": "прозорлИва"},
+    {"question": "сливовый", "answer": "слИвовый"},
+    {"question": "брала", "answer": "бралА"},
+    {"question": "бралась", "answer": "бралАсь"},
+    {"question": "взяла", "answer": "взялА"},
+    {"question": "взялась", "answer": "взялАсь"},
+    {"question": "влилась", "answer": "влилАсь"},
+    {"question": "ворвалась", "answer": "ворвалАсь"},
+    {"question": "восприняла", "answer": "воспринЯла"},
+    {"question": "воссоздала", "answer": "воссоздАлА"},
+    {"question": "вручит", "answer": "вручИт"},
+    {"question": "гнала", "answer": "гналА"},
+    {"question": "гналась", "answer": "гналАсь"},
+    {"question": "добрала", "answer": "добралА"},
+    {"question": "добралась", "answer": "добралАсь"},
+    {"question": "дождалась", "answer": "дождалАсь"},
+    {"question": "дозвонится", "answer": "дозвонИтся"},
+    {"question": "дозировать", "answer": "дозИровать"},
+    {"question": "закупорив", "answer": "закУпорив"},
+    {"question": "начав", "answer": "начАв"},
+    {"question": "начавшись", "answer": "начАвшись"},
+    {"question": "отдав", "answer": "отдАв"},
+    {"question": "подняв", "answer": "поднЯв"},
+    {"question": "поняв", "answer": "понЯв"},
+    {"question": "прибыв", "answer": "прибЫв"},
+    {"question": "создав", "answer": "создАв"},
+    {"question": "вовремя", "answer": "вОвремя"},
+    {"question": "доверху", "answer": "дОверху"},
+    {"question": "донельзя", "answer": "донЕльзя"},
+    {"question": "донизу", "answer": "дОнизу"},
+    {"question": "досуха", "answer": "дОсуха"},
+    {"question": "засветло", "answer": "зАсветло"},
+    {"question": "затемно", "answer": "зАтемно"},
+    {"question": "красивее", "answer": "красИвее"},
+    {"question": "надолго", "answer": "надОлго"},
+    {"question": "ненадолго", "answer": "ненадОлго"},
+    {"question": "ждала", "answer": "ждалА"},
+    {"question": "жилась", "answer": "жилАсь"},
+    {"question": "закупорить", "answer": "закУпорить"},
+    {"question": "занять", "answer": "занЯть"},
+    {"question": "занял", "answer": "зАнял"},
+    {"question": "заняла", "answer": "занялА"},
+    {"question": "заняли", "answer": "зАняли"},
+    {"question": "заперла", "answer": "заперлА"},
+    {"question": "запломбировать", "answer": "запломбировАть"},
+    {"question": "защемит", "answer": "защемИт"},
+    {"question": "звала", "answer": "звалА"},
+    {"question": "звонит", "answer": "звонИт"},
+    {"question": "кашлянуть", "answer": "кАшлянуть"},
+    {"question": "клала", "answer": "клАла"},
+    {"question": "клеить", "answer": "клЕить"},
+    {"question": "кралась", "answer": "крАлась"},
+    {"question": "кровоточить", "answer": "кровоточИть"},
+    {"question": "лгала", "answer": "лгалА"},
+    {"question": "лила", "answer": "лилА"},
+    {"question": "лилась", "answer": "лилАсь"},
+    {"question": "наврала", "answer": "навралА"},
+    {"question": "надели", "answer": "надЕли"},
+    {"question": "надорвалась", "answer": "надорвалАсь"},
+    {"question": "назвала", "answer": "назвалА"},
+    {"question": "назваться", "answer": "назвАться"},
+    {"question": "накренится", "answer": "накренИтся"},
+    {"question": "налила", "answer": "налилА"},
+    {"question": "нарвала", "answer": "нарвалА"},
+    {"question": "начать", "answer": "начАть"},
+    {"question": "начал", "answer": "нАчал"},
+    {"question": "начала", "answer": "началА"},
+    {"question": "начали", "answer": "нАчали"},
+    {"question": "обзвонит", "answer": "обзвонИт"},
+    {"question": "облегчить", "answer": "облегчИть"},
+    {"question": "облегчит", "answer": "облегчИт"},
+    {"question": "облилась", "answer": "облилАсь"},
+    {"question": "обогнала", "answer": "обогналА"},
+    {"question": "ободрала", "answer": "ободралА"},
+    {"question": "ободрить", "answer": "ободрИть"},
+    {"question": "ободрит", "answer": "ободрИт"},
+    {"question": "ободриться", "answer": "ободрИться"},
+    {"question": "ободрится", "answer": "ободрИтся"},
+    {"question": "обострить", "answer": "обострИть"},
+    {"question": "одолжить", "answer": "одолжИть"},
+    {"question": "одолжит", "answer": "одолжИт"},
+    {"question": "озлобить", "answer": "озлОбить"},
+    {"question": "оклеить", "answer": "оклЕить"},
+    {"question": "окружит", "answer": "окружИт"},
+    {"question": "опошлить", "answer": "опОшлить"},
+    {"question": "осведомиться", "answer": "освЕдомиться"},
+    {"question": "осведомится", "answer": "освЕдомится"},
+    {"question": "отбыла", "answer": "отбылА"},
+    {"question": "отдала", "answer": "отдалА"},
+    {"question": "откупорить", "answer": "откУпорить"},
+    {"question": "отозвала", "answer": "отозвалА"},
+    {"question": "отозвалась", "answer": "отозвалАсь"},
+    {"question": "перезвонит", "answer": "перезвонИт"},
+    {"question": "перелила", "answer": "перелилА"},
+    {"question": "перелить", "answer": "перелИть"},
+    {"question": "плодоносить", "answer": "плодоносИть"},
+    {"question": "пломбировать", "answer": "пломбировАть"},
+    {"question": "повторит", "answer": "повторИт"},
+    {"question": "позвала", "answer": "позвалА"},
+    {"question": "позвонит", "answer": "позвонИт"},
+    {"question": "полила", "answer": "полилА"},
+    {"question": "положить", "answer": "положИть"},
+    {"question": "положил", "answer": "положИл"},
+    {"question": "понять", "answer": "понЯть"},
+    {"question": "поняла", "answer": "понялА"},
+    {"question": "послала", "answer": "послАла"},
+    {"question": "прибыть", "answer": "прибЫть"},
+    {"question": "прибыл", "answer": "прИбыл"},
+    {"question": "прибыла", "answer": "прибылА"},
+    {"question": "прибыли", "answer": "прИбыли"},
+    {"question": "принять", "answer": "принЯть"},
+    {"question": "принял", "answer": "прИнял"},
+    {"question": "приняла", "answer": "принялА"},
+    {"question": "приняли", "answer": "прИняли"},
+    {"question": "рвала", "answer": "рвалА"},
+    {"question": "сверлит", "answer": "сверлИт"},
+    {"question": "сняла", "answer": "снялА"},
+    {"question": "соврала", "answer": "совралА"},
+    {"question": "создала", "answer": "создалА"},
+    {"question": "сорвала", "answer": "сорвалА"},
+    {"question": "сорит", "answer": "сорИт"},
+    {"question": "убрала", "answer": "убралА"},
+    {"question": "углубить", "answer": "углубИть"},
+    {"question": "укрепит", "answer": "укрепИт"},
+    {"question": "черпать", "answer": "чЕрпать"},
+    {"question": "щемит", "answer": "щемИт"},
+    {"question": "щелкать", "answer": "щЁлкать"},
+    {"question": "довезенный", "answer": "довезЁнный"},
+    {"question": "загнутый", "answer": "зАгнутый"},
+    {"question": "занятый", "answer": "зАнятый"},
+    {"question": "занята", "answer": "занятА"},
+    {"question": "заперты", "answer": "зАперты"},
+    {"question": "заселенный", "answer": "заселЁнный"},
+    {"question": "заселена", "answer": "заселенА"},
+    {"question": "кормящий", "answer": "кормЯщий"},
+    {"question": "кровоточащий", "answer": "кровоточАщий"},
+    {"question": "наживший", "answer": "нажИвший"},
+    {"question": "наливший", "answer": "налИвший"},
+    {"question": "нанявшийся", "answer": "нанЯвшийся"},
+    {"question": "начавший", "answer": "начАвший"},
+    {"question": "начатый", "answer": "нАчатый"},
+    {"question": "низведенный", "answer": "низведЁнный"},
+    {"question": "облегченный", "answer": "облегчЁнный"},
+    {"question": "ободренный", "answer": "ободрЁнный"},
+    {"question": "обостренный", "answer": "обострЁнный"},
+    {"question": "отключенный", "answer": "отключЁнный"},
+    {"question": "повторенный", "answer": "повторЁнный"},
+    {"question": "поделенный", "answer": "поделЁнный"},
+    {"question": "понявший", "answer": "понЯвший"},
+    {"question": "принятый", "answer": "прИнятый"},
+    {"question": "принята", "answer": "принятА"},
+    {"question": "прирученный", "answer": "приручЁнный"},
+    {"question": "проживший", "answer": "прожИвший"},
+    {"question": "снята", "answer": "снятА"},
+    {"question": "согнутый", "answer": "сОгнутый"},
+    {"question": "углубленный", "answer": "углублЁнный"}
 ];
